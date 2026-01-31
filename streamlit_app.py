@@ -62,10 +62,10 @@ st.set_page_config(page_title="Stock Trend Predictor", layout="wide")
 st.title("📈 AI Stock Trend Predictor")
 st.caption("Educational market analysis with actionable trading signals")
 
-API_PREDICT = "f{API_URL}/predict"
-API_LATEST = "f{API_URL}/latest"
-API_BACKTEST = "f{API_URL}/backtest"
-API_SIGNAL = "f{API_URL}/signal"
+API_PREDICT = f"{API_URL}/predict"
+API_LATEST = f"{API_URL}/predict/latest"
+API_BACKTEST = f"{API_URL}/backtest"
+API_SIGNAL = f"{API_URL}/signal"
 
 # --------------------------------------------------
 # 🎯 TRADING SIGNAL (PRIMARY FEATURE)
@@ -398,7 +398,7 @@ with col2:
 if run_forecast:
     with st.spinner("Running multi-day forecast..."):
         response = requests.post(
-            "http://127.0.0.1:8000/predict/multi",
+            f"{API_URL}/predict/multi",
             json={
                 "symbol": symbol,
                 "days": forecast_days
