@@ -62,10 +62,10 @@ st.set_page_config(page_title="Stock Trend Predictor", layout="wide")
 st.title("📈 AI Stock Trend Predictor")
 st.caption("Educational market analysis with actionable trading signals")
 
-API_PREDICT = "http://127.0.0.1:8000/predict"
-API_LATEST = "http://127.0.0.1:8000/predict/latest"
-API_BACKTEST = "http://127.0.0.1:8000/backtest"
-API_SIGNAL = "http://127.0.0.1:8000/signal"
+API_PREDICT = "f{API_URL}/predict"
+API_LATEST = "f{API_URL}/latest"
+API_BACKTEST = "f{API_URL}/backtest"
+API_SIGNAL = "f{API_URL}/signal"
 
 # --------------------------------------------------
 # 🎯 TRADING SIGNAL (PRIMARY FEATURE)
