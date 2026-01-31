@@ -1,3 +1,5 @@
+API_URL = "https://ai-stock-trend-predictor-production.up.railway.app"  
+
 import streamlit as st
 import yfinance as yf
 import pandas as pd
