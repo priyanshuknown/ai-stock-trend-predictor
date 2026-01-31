@@ -1,4 +1,4 @@
-API_URL = "https://ai-stock-trend-predictor-production.up.railway.app"  
+API_URL = "https://ai-stock-backend-u5qh.onrender.com"  
 
 import streamlit as st
 import yfinance as yf
