@@ -1,4 +1,5 @@
 streamlit
+uvicorn
 yfinance
 pandas
 numpy
@@ -6,3 +7,5 @@ requests
 matplotlib
 xgboost
 scikit-learn
+
+
